@@ -36,7 +36,7 @@ const devMountainGoal = null;
 //plus the value of the name parameter.
 
 function greeting (name) {
-  return "hello + ${name}"
+  return "Hello, " + name
 };
 
 //////////////////PROBLEM 7////////////////////
@@ -44,8 +44,8 @@ function greeting (name) {
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-function newGreeting (age) {
-  return "my age is + ${age}"
+let newGreeting = function (name) {
+  return "Hello, " + name
 };
 
 
@@ -85,11 +85,13 @@ let devMountainClassPet = dog.name;
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 function nameCheck (name) {
-  if (name = Steven) 
-  return "What is up Steven?";    
-  else if (name = Bryan) 
-  return "Hey Bryan"; 
-  else return name;
+  if (name == "Steven") { 
+  return "What is up Steven?" 
+}
+  else if (name == "Bryan") {
+  return "Hey Bryan!" 
+}
+  else return "Cool name, " + name
 };
 
 //////////////////PROBLEM 11////////////////////
@@ -117,12 +119,15 @@ var mathSum = add(3,4);
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 function faveColorFinder (color){
-  if (color = "red")
-  return "Red is a great color";
-  else if (color = "Green")
-  return "Green is a solid favorite color";
-  else if (color = "black")
+  if (color == "red") {
+  return "red is a great color";
+}
+  else if (color == "green") {
+  return "green is a solid favorite color";
+}
+  else if (color == "black") {
   return "so trendy";
+}
   else return "you need to evaluate your favorite color choice"
 };
 
@@ -149,7 +154,7 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
 let bathroomScope = ["duck", "rubberDuck"];
